@@ -37,13 +37,13 @@ Code中使用了[OpenCV](http://opencv.org/ "OpenCV")进行底层图像处理，
 * PAMI-Face.pdf -> SRC原理
 * YangA\_ICIP2010.pdf -> SRC中涉及的L1-Min问题解法，包括DALM算法等
 
-**./codes目录** SRC算法具体实现
+**./codes目录** SRC algorithm is implemented concretely
 					
-* slib静态库工程包括了SRC算法的主要实现，其中L1-Min问题使用的Fast DALM算法
-* train exe工程实现了SRC的训练程序，使用见程序usage
-* test exe工程实现了SRC的测试程序，使用见程序usage
-* test.py文件(./codes/face\_recog.SRC/\_exe/test.py)实现了SRC算法的批处理测试功能
-* ./codes/face\_recog.SRC/\_exe/extYaleB目录是[extended Yale Face Database B人脸库](http://vision.ucsd.edu/~leekc/ExtYaleDatabase/ExtYaleB.html "yalefacedb")
+* slib// The Static library project includes the main implementation of SRC algorithm, in which the fast Dalm algorithm for l1-min problem is used.
+* train exe// The project realizes the training program of SRC, using see program usage
+* test exe// The project realizes the test procedure of SRC, using see program usage
+* test.py// File (./codes/face_recog. src/_exe/test.py) implements 	the batch processing test function of SRC algorithm
+* ./codes/face\_recog.SRC/\_exe/extYaleB Table of Contents is [Extended Yale face Database B Facial database](http://vision.ucsd.edu/~leekc/ExtYaleDatabase/ExtYaleB.html "yalefacedb")
 
 
 409544320@qq.com, 6/11/2011
