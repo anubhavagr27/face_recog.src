@@ -2,18 +2,18 @@
 import os, glob
 import random
 
-all_folder= "extYaleB/" # 数据集目录
-model= "extYaleB.SRC" # SRC模型
-n_train= 30 # 每个人的训练图像数(随机选取)
-train_list= "extYaleB.train_list" # 训练图像列表, 需保证每个人的训练图像连续出现
-test_list= "extYaleB.test_list" # 测试图像列表
-sci_t= 0 # SCI阈值，具体解释见PAMI-Face.pdf文件
+all_folder= "extYaleB/" # DataSet directory
+model= "extYaleB.SRC" # SRCModel
+n_train= 30 # Each person's training image number (randomly selected)
+train_list= "extYaleB.train_list" # Training image list to ensure that each person's training image appears continuously
+test_list= "extYaleB.test_list" # Test image List
+sci_t= 0 # SCI Thresholds, specific explanations see Pami-face.pdf file
 
-w= 10 # SRC使用人脸图像宽度(双线性插值)
-h= 12 # SRC使用人脸图像高度
+w= 10 # SRC Use facial image width (bilinear interpolation)
+h= 12 # SRC Use face image height
 
-train_cmdline= "train.exe %s %d %d %d %s" % (train_list, n_train, w, h, model) # 训练命令行
-test_cmdline= "test.exe %s %s %f" % (model, test_list, sci_t) # 测试命令行
+train_cmdline= "train.exe %s %d %d %d %s" % (train_list, n_train, w, h, model) # Training Command Line
+test_cmdline= "test.exe %s %s %f" % (model, test_list, sci_t) # Test command line
 
 def UnrepeatedIntRandom(lower, upper, count):
 	"""Uniformly distributed COUNT integer randoms
